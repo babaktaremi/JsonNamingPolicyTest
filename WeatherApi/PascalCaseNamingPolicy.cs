@@ -7,9 +7,8 @@ public class PascalCaseNamingPolicy:JsonNamingPolicy
 {
     public override string ConvertName(string name)
     {
-        if (name.All(char.IsUpper))
-            return name.ToLower().Pascalize();
+        var resolver = CamelCase;
 
-        return name.Pascalize();
+        return resolver.ConvertName(name).Pascalize();
     }
 }
