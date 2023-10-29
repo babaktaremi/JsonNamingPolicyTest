@@ -14,5 +14,7 @@ namespace WeatherApi
         public string ISIN { get; set; }
         public string Some_Property_With_UnderScore { get; set; }
         public string _OrderExpectedQuantity { get; set; }
+
+        public string email { get; set; }
     }
 }
